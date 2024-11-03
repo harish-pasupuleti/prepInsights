@@ -41,7 +41,9 @@ server.use('/auth', authRoutes);
 server.use("/upload",verifyJWT,addBlog)
 server.use("/blogs",blogRouter)
 server.use("/profile",ProfileRoutes)
-
+server.get("/",(req,res)=>{
+    console.log('hi')
+})
 
 server.post(
     '/upload1',

@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "routes": [
@@ -24,31 +24,31 @@
     },
     {
       "src": "/settings/edit-profile",
-      "dest": "/"
+      "dest": "/index.html"
     },
     {
       "src": "/settings/change-password",
-      "dest": "/"
+      "dest": "/index.html"
     },
     {
       "src": "/signin",
-      "dest": "/"
+      "dest": "/index.html"
     },
     {
       "src": "/signup",
-      "dest": "/"
+      "dest": "/index.html"
     },
     {
       "src": "/search/(.*)",
-      "dest": "/"
+      "dest": "/index.html"
     },
     {
       "src": "/user/(.*)",
-      "dest": "/"
+      "dest": "/index.html"
     },
     {
       "src": "/blog/(.*)",
-      "dest": "/"
+      "dest": "/index.html"
     }
   ]
 }

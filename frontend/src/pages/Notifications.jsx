@@ -6,7 +6,7 @@ import AnimateWrapper from '../common/PageAnimation';
 import NoDataMessage from '../components/NoDataMessage';
 import LoadMoreDataBtn from '../components/LoadMoreDataBtn';
 import { FilterPagination } from '../common/FilterPagination';
-import NotificationCard from '../components/notificationCard';
+import NotificationCard from '../components/NotificationCard';
 
 const Notifications = () => {
   let {

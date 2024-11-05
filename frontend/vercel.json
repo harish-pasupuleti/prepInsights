@@ -1,8 +1,54 @@
 {
-“rewrites”: [
-{
-“source”: “/(.*)”,
-“destination”: “/index.html”
-}
-]
+  "rewrites": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/editor",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/editor/(.*)",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/dashboard/blogs",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/dashboard/notifications",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/settings/edit-profile",
+      "dest": "/"
+    },
+    {
+      "src": "/settings/change-password",
+      "dest": "/"
+    },
+    {
+      "src": "/signin",
+      "dest": "/"
+    },
+    {
+      "src": "/signup",
+      "dest": "/"
+    },
+    {
+      "src": "/search/(.*)",
+      "dest": "/"
+    },
+    {
+      "src": "/user/(.*)",
+      "dest": "/"
+    },
+    {
+      "src": "/blog/(.*)",
+      "dest": "/"
+    }
+  ]
 }

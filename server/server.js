@@ -28,10 +28,12 @@ initializeFirebase();
 
 // Middleware
 server.use(cors({
-  origin: "https://prep-insights-s4i9.vercel.app", // frontend domain
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  origin: "https://prep-insights-s4i9.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
 server.use(express.json({ limit: '2mb' }));
 server.use(express.urlencoded({ limit: '2mb', extended: true }));
 

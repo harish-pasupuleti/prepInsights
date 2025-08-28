@@ -27,7 +27,11 @@ const PORT = process.env.PORT || 3000;
 initializeFirebase();
 
 // Middleware
-server.use(cors());
+server.use(cors({
+  origin: "https://prep-insights-s4i9.vercel.app", // frontend domain
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 server.use(express.json({ limit: '2mb' }));
 server.use(express.urlencoded({ limit: '2mb', extended: true }));
 

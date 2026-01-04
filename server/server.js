@@ -28,7 +28,7 @@ initializeFirebase();
 
 // Middleware
 server.use(cors({
-  origin: "https://prep-insights-s4i9.vercel.app",
+  origin: "https://prep-insights-ewdb.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"]
